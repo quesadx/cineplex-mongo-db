@@ -1,0 +1,13 @@
+# Se necesitan agregar las credenciales de conexión a MongoDB
+# y, junto a ello, la IP :/
+mongoimport --uri "mongodb+srv://usuario:clave@cluster.mongodb.net/cineplex_db" \
+  --collection cadenas --file cadenas.json --jsonArray
+
+mongoimport --uri "mongodb+srv://usuario:clave@cluster.mongodb.net/cineplex_db" \
+  --collection complejos --file complejos.json --jsonArray
+
+mongoimport --uri "mongodb+srv://usuario:clave@cluster.mongodb.net/cineplex_db" \
+  --collection salas --file salas.json --jsonArray
+
+mongoimport --uri "mongodb+srv://usuario:clave@cluster.mongodb.net/cineplex_db" \
+  --collection peliculas --file peliculas.json --jsonArray
