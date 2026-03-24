@@ -1,0 +1,26 @@
+[
+  {
+    "_id": 1,
+    "nombre": "CineMark",
+    "pais": "Perú",
+    "ciudad_principal": "Lima",
+    "año_fundacion": 2000,
+    "cantidad_complejos": 15
+  },
+  {
+    "_id": 2,
+    "nombre": "Cineplanet",
+    "pais": "Perú",
+    "ciudad_principal": "Lima",
+    "año_fundacion": 1998,
+    "cantidad_complejos": 20
+  },
+  {
+    "_id": 3,
+    "nombre": "CineStar",
+    "pais": "Perú",
+    "ciudad_principal": "Arequipa",
+    "año_fundacion": 2005,
+    "cantidad_complejos": 8
+  }
+]

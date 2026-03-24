@@ -1,0 +1,56 @@
+[
+  {
+    "_id": 1,
+    "numero_sala": 1,
+    "complejo_id": 1,
+    "capacidad": 180,
+    "tipo_pantalla": "IMAX",
+    "audio": "Dolby Atmos",
+    "disponible": true
+  },
+  {
+    "_id": 2,
+    "numero_sala": 2,
+    "complejo_id": 1,
+    "capacidad": 150,
+    "tipo_pantalla": "3D",
+    "audio": "Dolby Digital",
+    "disponible": true
+  },
+  {
+    "_id": 3,
+    "numero_sala": 1,
+    "complejo_id": 2,
+    "capacidad": 200,
+    "tipo_pantalla": "Estándar",
+    "audio": "Dolby Digital",
+    "disponible": true
+  },
+  {
+    "_id": 4,
+    "numero_sala": 1,
+    "complejo_id": 3,
+    "capacidad": 220,
+    "tipo_pantalla": "IMAX",
+    "audio": "Dolby Atmos",
+    "disponible": true
+  },
+  {
+    "_id": 5,
+    "numero_sala": 2,
+    "complejo_id": 3,
+    "capacidad": 160,
+    "tipo_pantalla": "3D",
+    "audio": "Dolby Digital",
+    "disponible": false
+  },
+  {
+    "_id": 6,
+    "numero_sala": 1,
+    "complejo_id": 4,
+    "capacidad": 140,
+    "tipo_pantalla": "Estándar",
+    "audio": "Estéreo",
+    "disponible": true
+  }
+]

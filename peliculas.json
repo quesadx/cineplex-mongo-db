@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 1,
+    "titulo": "Dune: Parte Dos",
+    "director": "Denis Villeneuve",
+    "genero": "Ciencia Ficción",
+    "año_estreno": 2024,
+    "duracion_minutos": 166,
+    "clasificacion": "PG-13",
+    "sinopsis": "Paul Atreides viaja a Arrakis para cumplir su destino.",
+    "idioma_original": "Inglés",
+    "en_cartelera": true
+  },
+  {
+    "_id": 2,
+    "titulo": "Oppenheimer",
+    "director": "Christopher Nolan",
+    "genero": "Drama",
+    "año_estreno": 2023,
+    "duracion_minutos": 180,
+    "clasificacion": "R",
+    "sinopsis": "La historia de J. Robert Oppenheimer y el desarrollo de la bomba atómica.",
+    "idioma_original": "Inglés",
+    "en_cartelera": true
+  },
+  {
+    "_id": 3,
+    "titulo": "Barbie",
+    "director": "Greta Gerwig",
+    "genero": "Comedia",
+    "año_estreno": 2023,
+    "duracion_minutos": 114,
+    "clasificacion": "PG",
+    "sinopsis": "Barbie y Ken descubren el mundo real.",
+    "idioma_original": "Inglés",
+    "en_cartelera": false
+  },
+  {
+    "_id": 4,
+    "titulo": "Killers of the Flower Moon",
+    "director": "Martin Scorsese",
+    "genero": "Crimen",
+    "año_estreno": 2023,
+    "duracion_minutos": 206,
+    "clasificacion": "R",
+    "sinopsis": "La historia de los asesinatos de la tribu Osage.",
+    "idioma_original": "Inglés",
+    "en_cartelera": true
+  },
+  {
+    "_id": 5,
+    "titulo": "La Zona de Interés",
+    "director": "Jonathan Glazer",
+    "genero": "Drama",
+    "año_estreno": 2023,
+    "duracion_minutos": 105,
+    "clasificacion": "R",
+    "sinopsis": "Una perspectiva íntima de la vida dentro de un campo de concentración.",
+    "idioma_original": "Alemán",
+    "en_cartelera": false
+  }
+]

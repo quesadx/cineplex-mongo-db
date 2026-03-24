@@ -1,0 +1,46 @@
+[
+  {
+    "_id": 1,
+    "nombre": "CineMark Lima - Jockey Plaza",
+    "cadena_id": 1,
+    "ciudad": "Lima",
+    "distrito": "Santiago de Surco",
+    "direccion": "Av. Javier Prado Este 4200",
+    "telefono": "01-5194000",
+    "cantidad_salas": 12,
+    "estacionamiento": true
+  },
+  {
+    "_id": 2,
+    "nombre": "CineMark Lima - Megaplaza",
+    "cadena_id": 1,
+    "ciudad": "Lima",
+    "distrito": "Lima",
+    "direccion": "Av. Universitaria 3001",
+    "telefono": "01-5194001",
+    "cantidad_salas": 8,
+    "estacionamiento": true
+  },
+  {
+    "_id": 3,
+    "nombre": "Cineplanet Lima - Alcázar",
+    "cadena_id": 2,
+    "ciudad": "Lima",
+    "distrito": "Miraflores",
+    "direccion": "Av. José Larco 780",
+    "telefono": "01-4460400",
+    "cantidad_salas": 10,
+    "estacionamiento": true
+  },
+  {
+    "_id": 4,
+    "nombre": "Cineplanet Arequipa - Mall",
+    "cadena_id": 2,
+    "ciudad": "Arequipa",
+    "distrito": "Arequipa",
+    "direccion": "Calle Santa Catalina 210",
+    "telefono": "054-204400",
+    "cantidad_salas": 6,
+    "estacionamiento": false
+  }
+]
