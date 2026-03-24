@@ -1,5 +1,4 @@
-# Se necesitan agregar las credenciales de conexión a MongoDB
-# y, junto a ello, la IP :/
+# Se necesita mongodb-tools para ejecutar este script
 mongoimport --uri "mongodb+srv://hairol:hairol@cineplexcluster.xeej5kl.mongodb.net/cineplex_db" \
   --collection cadenas --file cadenas.json --jsonArray
 
