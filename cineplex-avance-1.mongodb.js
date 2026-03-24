@@ -1,4 +1,4 @@
-//  CINEPLEX — Avance 1
+//  CINEPLEX - Avance 1
 //  Colecciones: cadenas, complejos, salas, peliculas
 
 use('cineplex_db');
