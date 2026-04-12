@@ -15,8 +15,48 @@
     "fila": "A",
     "numero_butaca": 11,
     "zona": "VIP",
-    "estado_actual": "Disponible",
+    "estado_actual": "Reservado",
     "precio_asociado": 6000,
+    "tipo_butaca": "VIP con Servicio"
+  },
+  {
+    "_id": 3,
+    "sala_id": 1,
+    "fila": "B",
+    "numero_butaca": 5,
+    "zona": "Preferencial",
+    "estado_actual": "Vendido",
+    "precio_asociado": 4500,
     "tipo_butaca": "Reclinable"
+  },
+  {
+    "_id": 4,
+    "sala_id": 1,
+    "fila": "C",
+    "numero_butaca": 15,
+    "zona": "General",
+    "estado_actual": "Bloqueado",
+    "precio_asociado": 3000,
+    "tipo_butaca": "Estándar"
+  },
+  {
+    "_id": 5,
+    "sala_id": 1,
+    "fila": "D",
+    "numero_butaca": 20,
+    "zona": "General",
+    "estado_actual": "En Mantenimiento",
+    "precio_asociado": 3000,
+    "tipo_butaca": "Estándar"
+  },
+  {
+    "_id": 6,
+    "sala_id": 1,
+    "fila": "A",
+    "numero_butaca": 12,
+    "zona": "VIP",
+    "estado_actual": "Disponible",
+    "precio_asociado": 7000,
+    "tipo_butaca": "Doble"
   }
 ]

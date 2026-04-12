@@ -3,32 +3,71 @@
     "_id": 1,
     "codigo": "MAMUT50",
     "nombre": "Mitad de precio Cavernícola",
-    "descripcion": "50% de descuento en entradas",
+    "descripcion": "50% de descuento en entradas los miércoles",
     "tipo_descuento": "Porcentaje",
     "valor_descuento": 50,
+    "fecha_inicio": "2026-03-01",
+    "fecha_fin": "2026-06-30",
     "estado": "Activa",
     "restricciones": {
       "dias_permitidos": ["Miércoles"],
-      "solo_lealtad": true
+      "franjas_horarias": ["Matinee", "Regular"],
+      "solo_lealtad": true,
+      "tipos_sala_validos": ["Estándar", "3D"]
     },
     "control_uso": {
       "maximo_usos_totales": 100,
-      "maximo_usos_cliente": 1
-    }
+      "maximo_usos_cliente": 1,
+      "monto_minimo_compra": 5000,
+      "acumulable_otras_promociones": false
+    },
+    "historial_redencion": [
+      {
+        "cliente_id": 1,
+        "reserva_id": 1,
+        "fecha_uso": "2026-04-09T18:30:00Z",
+        "monto_descontado": 2500,
+        "estado_redencion": "Aplicada"
+      },
+      {
+        "cliente_id": 2,
+        "reserva_id": 2,
+        "fecha_uso": "2026-04-02T17:45:00Z",
+        "monto_descontado": 1800,
+        "estado_redencion": "Revertida por Cancelación"
+      }
+    ]
   },
   {
     "_id": 2,
     "codigo": "FUEGO1000",
     "nombre": "Descuento de 1000 colones",
-    "descripcion": "Descuento fijo en compra",
+    "descripcion": "Descuento fijo en salas estándar",
     "tipo_descuento": "Monto Fijo",
     "valor_descuento": 1000,
+    "fecha_inicio": "2026-04-01",
+    "fecha_fin": "2026-05-31",
     "estado": "Activa",
     "restricciones": {
-      "tipos_sala_validos": ["Estándar"]
+      "tipos_sala_validos": ["Estándar"],
+      "peliculas_validas": [1, 2],
+      "franjas_horarias": ["Nocturna"],
+      "complejo_id": 1
     },
     "control_uso": {
-      "maximo_usos_cliente": 2
-    }
+      "maximo_usos_totales": 500,
+      "maximo_usos_cliente": 2,
+      "monto_minimo_compra": 3000,
+      "acumulable_otras_promociones": true
+    },
+    "historial_redencion": [
+      {
+        "cliente_id": 1,
+        "reserva_id": 1,
+        "fecha_uso": "2026-04-11T19:15:00Z",
+        "monto_descontado": 1000,
+        "estado_redencion": "Aplicada"
+      }
+    ]
   }
 ]

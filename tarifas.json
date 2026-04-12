@@ -2,8 +2,10 @@
   {
     "_id": 1,
     "cadena_id": 1,
+    "complejo_id": 1,
     "tipo_sala": "IMAX",
     "dia_semana": "Miércoles",
+    "franja_horaria": "Nocturna",
     "categoria_cliente": "Adulto",
     "precio_base": 4500,
     "impuestos": 585,
@@ -12,11 +14,37 @@
   {
     "_id": 2,
     "cadena_id": 1,
+    "complejo_id": 2,
     "tipo_sala": "Estándar",
     "dia_semana": "Miércoles",
+    "franja_horaria": "Regular",
     "categoria_cliente": "Estudiante",
     "precio_base": 3000,
     "impuestos": 390,
     "precio_total": 3390
+  },
+  {
+    "_id": 3,
+    "cadena_id": 1,
+    "complejo_id": 1,
+    "tipo_sala": "Estándar",
+    "dia_semana": "Domingo",
+    "franja_horaria": "Matinee",
+    "categoria_cliente": "Niño",
+    "precio_base": 2500,
+    "impuestos": 325,
+    "precio_total": 2825
+  },
+  {
+    "_id": 4,
+    "cadena_id": 1,
+    "complejo_id": 2,
+    "tipo_sala": "IMAX",
+    "dia_semana": "Viernes",
+    "franja_horaria": "Nocturna",
+    "categoria_cliente": "Adulto Mayor",
+    "precio_base": 3500,
+    "impuestos": 455,
+    "precio_total": 3955
   }
 ]
