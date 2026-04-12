@@ -1,0 +1,22 @@
+[
+  {
+    "_id": 1,
+    "cadena_id": 1,
+    "tipo_sala": "IMAX",
+    "dia_semana": "Miércoles",
+    "categoria_cliente": "Adulto",
+    "precio_base": 4500,
+    "impuestos": 585,
+    "precio_total": 5085
+  },
+  {
+    "_id": 2,
+    "cadena_id": 1,
+    "tipo_sala": "Estándar",
+    "dia_semana": "Miércoles",
+    "categoria_cliente": "Estudiante",
+    "precio_base": 3000,
+    "impuestos": 390,
+    "precio_total": 3390
+  }
+]
