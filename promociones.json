@@ -69,5 +69,89 @@
         "estado_redencion": "Aplicada"
       }
     ]
+  },
+  {
+    "_id": 3,
+    "codigo": "PRIMAVERA20",
+    "nombre": "Promo Primavera 20% OFF",
+    "descripcion": "20% de descuento en todas las salas de cine",
+    "tipo_descuento": "Porcentaje",
+    "valor_descuento": 20,
+    "fecha_inicio": "2026-03-15",
+    "fecha_fin": "2026-04-10",
+    "estado": "Expirada",
+    "restricciones": {
+      "dias_permitidos": ["Lunes", "Martes", "Miércoles"],
+      "solo_lealtad": false
+    },
+    "control_uso": {
+      "maximo_usos_totales": 200,
+      "maximo_usos_cliente": 3,
+      "monto_minimo_compra": 2500,
+      "acumulable_otras_promociones": false
+    },
+    "historial_redencion": [
+      {
+        "cliente_id": 1,
+        "reserva_id": 1,
+        "fecha_uso": "2026-04-08T16:00:00Z",
+        "monto_descontado": 1200,
+        "estado_redencion": "Aplicada"
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "codigo": "VERANO30VIP",
+    "nombre": "Verano VIP 30% Descuento",
+    "descripcion": "Descuento exclusivo 30% para salas VIP durante verano",
+    "tipo_descuento": "Porcentaje",
+    "valor_descuento": 30,
+    "fecha_inicio": "2026-06-01",
+    "fecha_fin": "2026-08-31",
+    "estado": "Pausada",
+    "restricciones": {
+      "tipos_sala_validos": ["VIP", "IMAX"],
+      "solo_lealtad": true,
+      "cadena_id": 1
+    },
+    "control_uso": {
+      "maximo_usos_totales": 50,
+      "maximo_usos_cliente": 1,
+      "monto_minimo_compra": 8000,
+      "acumulable_otras_promociones": false
+    },
+    "historial_redencion": []
+  },
+  {
+    "_id": 5,
+    "codigo": "VIERNES13",
+    "nombre": "Viernes 13 - Descuento Nocturno",
+    "descripcion": "1500 colones OFF en funciones nocturnas cada viernes",
+    "tipo_descuento": "Monto Fijo",
+    "valor_descuento": 1500,
+    "fecha_inicio": "2026-02-01",
+    "fecha_fin": "2026-04-10",
+    "estado": "Agotada",
+    "restricciones": {
+      "dias_permitidos": ["Viernes"],
+      "franjas_horarias": ["Nocturna"],
+      "solo_lealtad": false
+    },
+    "control_uso": {
+      "maximo_usos_totales": 100,
+      "maximo_usos_cliente": 5,
+      "monto_minimo_compra": 4000,
+      "acumulable_otras_promociones": true
+    },
+    "historial_redencion": [
+      {
+        "cliente_id": 1,
+        "reserva_id": 1,
+        "fecha_uso": "2026-04-10T20:45:00Z",
+        "monto_descontado": 1500,
+        "estado_redencion": "Aplicada"
+      }
+    ]
   }
 ]

@@ -10,7 +10,13 @@
     "hora_fin": "21:00",
     "formato": "IMAX",
     "idioma": "Subtitulada",
-    "estado": "Programada"
+    "estado": "Programada",
+    "control_asientos": {
+      "disponibles": 50,
+      "reservados": 15,
+      "vendidos": 25,
+      "porcentaje_ocupacion": 44.4
+    }
   },
   {
     "_id": 2,
@@ -23,6 +29,12 @@
     "hora_fin": "22:15",
     "formato": "Estándar",
     "idioma": "Doblada",
-    "estado": "Programada"
+    "estado": "Programada",
+    "control_asientos": {
+      "disponibles": 80,
+      "reservados": 10,
+      "vendidos": 10,
+      "porcentaje_ocupacion": 20.0
+    }
   }
 ]

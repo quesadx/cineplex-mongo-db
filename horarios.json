@@ -18,5 +18,35 @@
     "hora_finalizacion": "2026-04-15T22:15:00Z",
     "duracion_total_minutos": 195,
     "tipo_funcion": "Nocturna"
+  },
+  {
+    "_id": 3,
+    "funcion_id": 1,
+    "pelicula_id": 1,
+    "sala_id": 1,
+    "fecha_hora_inicio": "2026-04-16T14:00:00Z",
+    "hora_finalizacion": "2026-04-16T17:00:00Z",
+    "duracion_total_minutos": 180,
+    "tipo_funcion": "Matinee"
+  },
+  {
+    "_id": 4,
+    "funcion_id": 2,
+    "pelicula_id": 2,
+    "sala_id": 3,
+    "fecha_hora_inicio": "2026-04-16T16:30:00Z",
+    "hora_finalizacion": "2026-04-16T19:45:00Z",
+    "duracion_total_minutos": 195,
+    "tipo_funcion": "Regular"
+  },
+  {
+    "_id": 5,
+    "funcion_id": 1,
+    "pelicula_id": 1,
+    "sala_id": 1,
+    "fecha_hora_inicio": "2026-04-17T00:00:00Z",
+    "hora_finalizacion": "2026-04-17T03:00:00Z",
+    "duracion_total_minutos": 180,
+    "tipo_funcion": "Especial"
   }
 ]
