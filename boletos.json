@@ -1,0 +1,30 @@
+[
+  {
+    "_id": 1,
+    "reserva_id": 1,
+    "codigo_verificacion": "QR-CAVERN-999",
+    "cadena_complejo": "CineMark Lima - Jockey Plaza",
+    "titulo_pelicula": "Dune: Parte Dos",
+    "fecha_hora_funcion": "2026-04-15T18:00:00Z",
+    "sala": "1 - IMAX",
+    "asientos": ["A-10"],
+    "precio_pagado": 6000,
+    "cliente_id": 1,
+    "marca_temporal_compra": "2026-04-12T10:00:00Z",
+    "modalidad_entrega": "Digital"
+  },
+  {
+    "_id": 2,
+    "reserva_id": 1,
+    "codigo_verificacion": "QR-CAVERN-888",
+    "cadena_complejo": "Cineplanet Lima - Alcázar",
+    "titulo_pelicula": "Oppenheimer",
+    "fecha_hora_funcion": "2026-04-15T19:00:00Z",
+    "sala": "3 - Estándar",
+    "asientos": ["A-11"],
+    "precio_pagado": 3390,
+    "cliente_id": 2,
+    "marca_temporal_compra": "2026-04-12T10:05:00Z",
+    "modalidad_entrega": "Impreso en Taquilla"
+  }
+]
