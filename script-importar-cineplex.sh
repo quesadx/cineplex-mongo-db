@@ -11,7 +11,7 @@ if [ -z "${MONGODB_URI}" ]; then
 fi
 
 # Obtener el directorio donde está el script
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)" # Medio feo, pero obtiene el directorio del script sin importar desde dónde se ejecute
 JSON_DIR="${SCRIPT_DIR}/json"
 
 # Cambiar al directorio json
