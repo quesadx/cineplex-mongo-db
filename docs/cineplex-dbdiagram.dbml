@@ -1,15 +1,15 @@
 
 
-Table cadenas [note: "Aquí guardamos la información principal de las grandes cadenas de cines."] {
+Table cadenas [note: "Aquí guardamos la información principal de las grandes cadenas de cines.", headerColor: #1E3A58] {
   _id                ObjectId [pk]
   nombre             String   [not null]
   pais               String
   ciudad_principal   String
-  año_fundacion      Int
+  ano_fundacion      Int
   cantidad_complejos Int
 }
 
-Table complejos [note: "Estos son los cines físicos concretos que pertenecen a cada cadena en distintas ciudades y distritos."] {
+Table complejos [note: "Estos son los cines físicos concretos que pertenecen a cada cadena en distintas ciudades y distritos.", headerColor: #A63F35] {
   _id              ObjectId [pk]
   nombre           String   [not null]
   cadena_id        ObjectId [ref: > cadenas._id]
@@ -21,7 +21,7 @@ Table complejos [note: "Estos son los cines físicos concretos que pertenecen a 
   estacionamiento  Boolean
 }
 
-Table salas [note: "Cada cine tiene varias salas con distintas características, pantallas y sistemas de sonido."] {
+Table salas [note: "Cada cine tiene varias salas con distintas características, pantallas y sistemas de sonido.", headerColor: #3A3F4B] {
   _id           ObjectId [pk]
   numero_sala   Int      [not null]
   complejo_id   ObjectId [ref: > complejos._id]
@@ -31,12 +31,12 @@ Table salas [note: "Cada cine tiene varias salas con distintas características,
   disponible    Boolean
 }
 
-Table peliculas [note: "Nuestro catálogo completo de películas, con toda la información sobre géneros, directores y sinopsis."] {
+Table peliculas [note: "Nuestro catálogo completo de películas, con toda la información sobre géneros, directores y sinopsis.", headerColor: #D6A541] {
   _id              ObjectId [pk]
   titulo           String   [not null]
   director         String
   genero           String
-  año_estreno      Int
+  ano_estreno      Int
   duracion_minutos Int
   clasificacion    String
   sinopsis         String
@@ -45,7 +45,7 @@ Table peliculas [note: "Nuestro catálogo completo de películas, con toda la in
 }
 
 
-Table funciones [note: "Las funciones o proyecciones que se planean para la semana en un cine y sala específicos."] {
+Table funciones [note: "Las funciones o proyecciones que se planean para la semana en un cine y sala específicos.", headerColor: #C84630] {
   _id          ObjectId [pk]
   pelicula_id  ObjectId [ref: > peliculas._id]
   sala_id      ObjectId [ref: > salas._id]
@@ -55,11 +55,11 @@ Table funciones [note: "Las funciones o proyecciones que se planean para la sema
   hora_inicio  String
   hora_fin     String
   formato      String   [note: "Indica en qué formato se proyectará, como 2D, 3D, IMAX, etc."]
-  idioma       String   [note: "Nos dice si la película está doblada al español o en su idioma original con subtítulos."]
+  idioma       String   [note: "Nos dice si la película está doblada al espanol o en su idioma original con subtítulos."]
   estado       String   [note: "El estado actual de la función: si está por darse, si ya terminó o si lamentablemente se canceló."]
 }
 
-Table horarios [note: "Acá detallamos con precisión a qué hora empieza y termina cada función."] {
+Table horarios [note: "Acá detallamos con precisión a qué hora empieza y termina cada función.", headerColor: #4A6C8C] {
   _id                    ObjectId [pk]
   funcion_id             ObjectId [ref: > funciones._id]
   pelicula_id            ObjectId [ref: > peliculas._id]
@@ -70,18 +70,18 @@ Table horarios [note: "Acá detallamos con precisión a qué hora empieza y term
   tipo_funcion           String   [note: "Ayuda a saber si es función de matiné, regular, trasnoche o algún evento especial."]
 }
 
-Table tarifas [note: "Los precios de las entradas cambian dependiendo del día de la semana y si es para un niño o un adulto."] {
+Table tarifas [note: "Los precios de las entradas cambian dependiendo del día de la semana y si es para un nino o un adulto.", headerColor: #2E8B8B] {
   _id               ObjectId [pk]
   cadena_id         ObjectId [ref: > cadenas._id]
   tipo_sala         String
   dia_semana        String
-  categoria_cliente String   [note: "Diferenciamos el precio si el boleto es para un adulto, niño, estudiante o tarifa preferencial."]
+  categoria_cliente String   [note: "Diferenciamos el precio si el boleto es para un adulto, nino, estudiante o tarifa preferencial."]
   precio_base       Float
   impuestos         Float
   precio_total      Float
 }
 
-Table asientos [note: "El inventario asiento por asiento de cada sala. Acá sabemos si una butaca en específico está libre, reservada o ya se vendió."] {
+Table asientos [note: "El inventario asiento por asiento de cada sala. Acá sabemos si una butaca en específico está libre, reservada o ya se vendió.", headerColor: #7C2832] {
   _id             ObjectId [pk]
   sala_id         ObjectId [ref: > salas._id]
   fila            String
@@ -92,7 +92,7 @@ Table asientos [note: "El inventario asiento por asiento de cada sala. Acá sabe
   tipo_butaca     String   [note: "¿Es una butaca normal o una súper cómoda y reclinable?"]
 }
 
-Table clientes [note: "Nuestros queridos clientes registrados, con sus datos de contacto y preferencias."] {
+Table clientes [note: "Nuestros queridos clientes registrados, con sus datos de contacto y preferencias.", headerColor: #F5E7C0] {
   _id              ObjectId [pk]
   identificacion   String   [unique, not null]
   nombre_completo  String   [not null]
@@ -103,7 +103,7 @@ Table clientes [note: "Nuestros queridos clientes registrados, con sus datos de 
   programa_lealtad Object   [note: "Toda la información de fidelidad: cuántos puntos tienen, qué tipo de socio son, sus géneros favoritos y su cine de siempre."]
 }
 
-Table reservas [note: "El registro de cada compra o reserva que hace un cliente, incluyendo qué asientos eligió y cómo pagó."] {
+Table reservas [note: "El registro de cada compra o reserva que hace un cliente, incluyendo qué asientos eligió y cómo pagó.", headerColor: #E08B2A] {
   _id                ObjectId  [pk]
   cliente_id         ObjectId  [ref: > clientes._id]
   cadena_id          ObjectId  [ref: > cadenas._id]
@@ -115,7 +115,7 @@ Table reservas [note: "El registro de cada compra o reserva que hace un cliente,
   datos_pago         Object    [note: "Con qué tarjeta pagaron, quién es el titular y el método de pago utilizado."]
 }
 
-Table boletos [note: "El boleto final que se genera tras una reserva exitosa para que la persona pueda entrar a su función."] {
+Table boletos [note: "El boleto final que se genera tras una reserva exitosa para que la persona pueda entrar a su función.", headerColor: #F6C75A] {
   _id                   ObjectId [pk]
   reserva_id            ObjectId [ref: > reservas._id]
   codigo_verificacion   String   [unique]
@@ -130,7 +130,7 @@ Table boletos [note: "El boleto final que se genera tras una reserva exitosa par
   modalidad_entrega     String   [note: "¿El cliente llevará el boleto en su celular o prefiere que se lo impriman en el cine?"]
 }
 
-Table promociones [note: "Todas las promociones, códigos de descuento y ofertas para que los clientes vengan más al cine."] {
+Table promociones [note: "Todas las promociones, códigos de descuento y ofertas para que los clientes vengan más al cine.", headerColor: #C6368A] {
   _id                 ObjectId [pk]
   codigo              String   [unique, not null]
   nombre              String   [not null]
