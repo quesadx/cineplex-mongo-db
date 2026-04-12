@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 1,
+    "identificacion": "1-1111-1111",
+    "nombre_completo": "Pedro Picapiedra",
+    "correo": "pedro@cueva.com",
+    "telefono": "8888-8888",
+    "fecha_nacimiento": "1990-01-01",
+    "genero": "Masculino",
+    "programa_lealtad": {
+      "puntos_acumulados": 1500,
+      "nivel_membresia": "Plata",
+      "generos_preferidos": ["Comedia", "Ciencia Ficción"],
+      "complejo_habitual": 1
+    }
+  },
+  {
+    "_id": 2,
+    "identificacion": "2-2222-2222",
+    "nombre_completo": "Pablo Mármol",
+    "correo": "pablo@cueva.com",
+    "telefono": "9999-9999",
+    "fecha_nacimiento": "1992-05-05",
+    "genero": "Masculino",
+    "programa_lealtad": {
+      "puntos_acumulados": 300,
+      "nivel_membresia": "Bronce",
+      "generos_preferidos": ["Drama"],
+      "complejo_habitual": 2
+    }
+  }
+]

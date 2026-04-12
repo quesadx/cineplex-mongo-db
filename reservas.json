@@ -1,0 +1,33 @@
+[
+  {
+    "_id": 1,
+    "cliente_id": 1,
+    "cadena_id": 1,
+    "complejo_id": 1,
+    "pelicula_id": 1,
+    "funcion_id": 1,
+    "asientos_apartados": [
+      { "asiento_id": 1, "precio": 6000 }
+    ],
+    "estado_reserva": "Confirmada",
+    "datos_pago": {
+      "metodo": "Tarjeta",
+      "numero_tarjeta": "****-****-****-1234",
+      "titular": "Pedro Picapiedra",
+      "tipo_tarjeta": "Visa"
+    }
+  },
+  {
+    "_id": 2,
+    "cliente_id": 2,
+    "cadena_id": 1,
+    "complejo_id": 2,
+    "pelicula_id": 2,
+    "funcion_id": 2,
+    "asientos_apartados": [
+      { "asiento_id": 2, "precio": 3390 }
+    ],
+    "estado_reserva": "Pendiente",
+    "datos_pago": null
+  }
+]
