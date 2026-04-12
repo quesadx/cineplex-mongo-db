@@ -1,6 +1,5 @@
 # Se necesita mongodb-tools para ejecutar este script
-# IMPORTANTE: Set your MongoDB URI with credentials before running this script
-# You can export it as: export MONGODB_URI="mongodb+srv://<user>:<password>@cineplexcluster.xeej5kl.mongodb.net/cineplex_db"
+# IMPORTANTE: La idea es exportar la URI con: export MONGODB_URI="mongodb+srv://<user>:<password>@cineplexcluster.xeej5kl.mongodb.net/cineplex_db"
 
 mongoimport --uri "${MONGODB_URI}" \
   --collection cadenas --file cadenas.json --jsonArray
