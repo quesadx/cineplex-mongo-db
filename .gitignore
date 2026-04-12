@@ -1,2 +1,10 @@
 graphify-out
 .direnv
+.envrc
+.vscode/
+flake.nix
+flake.lock
+*.pdf
+*.md
+docs/
+.DS_Store
