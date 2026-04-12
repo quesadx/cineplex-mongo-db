@@ -1,0 +1,22 @@
+[
+  {
+    "_id": 1,
+    "funcion_id": 1,
+    "pelicula_id": 1,
+    "sala_id": 1,
+    "fecha_hora_inicio": "2026-04-15T18:00:00Z",
+    "hora_finalizacion": "2026-04-15T21:00:00Z",
+    "duracion_total_minutos": 180,
+    "tipo_funcion": "Nocturna"
+  },
+  {
+    "_id": 2,
+    "funcion_id": 2,
+    "pelicula_id": 2,
+    "sala_id": 3,
+    "fecha_hora_inicio": "2026-04-15T19:00:00Z",
+    "hora_finalizacion": "2026-04-15T22:15:00Z",
+    "duracion_total_minutos": 195,
+    "tipo_funcion": "Nocturna"
+  }
+]
