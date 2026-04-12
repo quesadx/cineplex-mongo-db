@@ -19,6 +19,7 @@ cd "${JSON_DIR}" || { echo "Error: No se puede acceder a ${JSON_DIR}"; exit 1; }
 
 echo "Iniciando importación de colecciones CINEPLEX..."
 echo "Base de datos: cineplex_db"
+echo "Modo ProfeR activado"
 echo ""
 
 # Avance 1
