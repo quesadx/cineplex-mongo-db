@@ -151,3 +151,18 @@ Table boletos [note: "ENTREGA FINAL — Boletos emitidos por reserva", headercol
   fecha_emision Date
   estado        String   [note: "Válido / Usado / Anulado"]
 }
+
+Table promociones [note: "ENTREGA FINAL — Promociones y descuentos disponibles", headercolor: #E74C3C] {
+  _id              ObjectId [pk]
+  codigo           String   [unique, not null]
+  nombre           String   [not null]
+  descripcion      String
+  tipo_descuento   String   [note: "Porcentaje / Monto Fijo"]
+  valor_descuento  Float
+  fecha_inicio     Date
+  fecha_fin        Date
+  estado           String   [note: "Activa / Pausada / Expirada / Agotada"]
+  restricciones    Array    [note: "Películas, salas, días, horarios, cadenas, solo_lealtad"]
+  control_uso      Array    [note: "Max total, max por cliente, monto mínimo, acumulable"]
+  historial_redencion Array [note: "cliente_id, reserva_id, fecha_uso, monto_descontado, estado"]
+}
