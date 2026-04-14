@@ -1,8 +1,3 @@
-//  CINEPLEX - Avance 1 & Avance 2 (Script completo)
-//  Avance 1 Colecciones: cadenas, complejos, salas, peliculas
-//  Avance 2 Colecciones: funciones, horarios, tarifas, asientos, clientes, reservas, boletos, promociones
-//  Total: 12 colecciones con datos coherentes y relacionados
-
 use('cineplex_db');
 
 // 1. CADENAS
@@ -638,9 +633,7 @@ db.promociones.insertMany([
 ]);
 print("Promociones insertadas:", db.promociones.countDocuments());
 
-
-// VERIFICACIÓN FINAL
-print("\n========== RESUMEN FINAL DE LA BASE DE DATOS cineplex_db ==========");
+print("\n--- RESUMEN FINAL DE LA BASE DE DATOS cineplex_db ----");
 print("   cadenas:      ", db.cadenas.countDocuments());
 print("   complejos:    ", db.complejos.countDocuments());
 print("   salas:        ", db.salas.countDocuments());
@@ -653,4 +646,3 @@ print("   clientes:     ", db.clientes.countDocuments());
 print("   reservas:     ", db.reservas.countDocuments());
 print("   boletos:      ", db.boletos.countDocuments());
 print("   promociones:  ", db.promociones.countDocuments());
-print("====================================================================");
