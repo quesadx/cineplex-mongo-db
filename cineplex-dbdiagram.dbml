@@ -1,6 +1,6 @@
 
 
-Table cadenas [note: "AVANCE 1 — Cadenas cinematográficas"] {
+Table cadenas [note: "AVANCE 1 — Cadenas cinematográficas", headercolor: #4D8EFF] {
   _id          ObjectId   [pk, note: "Clave primaria"]
   nombre_comercial String [not null]
   razon_social     String [not null]
@@ -13,7 +13,7 @@ Table cadenas [note: "AVANCE 1 — Cadenas cinematográficas"] {
   convenios        Array   [note: "Objeto: distribuidora, fecha_inicio, estrenos_mensuales, porcentaje_taquilla, generos, titulos_exclusivos"]
 }
 
-Table complejos [note: "AVANCE 1 — Complejos (cines) de cada cadena"] {
+Table complejos [note: "AVANCE 1 — Complejos (cines) de cada cadena", headercolor: #4D8EFF] {
   _id                    ObjectId [pk]
   cadena_id              ObjectId [ref: > cadenas._id, note: "FK → cadenas"]
   codigo                 String   [not null, unique]
@@ -30,7 +30,7 @@ Table complejos [note: "AVANCE 1 — Complejos (cines) de cada cadena"] {
   servicio_zona_juegos   Boolean
 }
 
-Table salas [note: "AVANCE 1 — Salas dentro de cada complejo"] {
+Table salas [note: "AVANCE 1 — Salas dentro de cada complejo", headercolor: #4D8EFF] {
   _id                    ObjectId [pk]
   complejo_id            ObjectId [ref: > complejos._id, note: "FK → complejos"]
   numero_id              Int      [not null]
@@ -50,7 +50,7 @@ Table salas [note: "AVANCE 1 — Salas dentro de cada complejo"] {
   butacas_reclinables    Boolean
 }
 
-Table peliculas [note: "AVANCE 1 — Catálogo de películas"] {
+Table peliculas [note: "AVANCE 1 — Catálogo de películas", headercolor: #34C759] {
   _id                  ObjectId [pk]
   titulo_original      String   [not null]
   titulo_espanol       String
@@ -75,7 +75,7 @@ Table peliculas [note: "AVANCE 1 — Catálogo de películas"] {
 }
 
 
-Table funciones [note: "ENTREGA FINAL — Funciones programadas por semana"] {
+Table funciones [note: "ENTREGA FINAL — Funciones programadas por semana", headercolor: #34C759] {
   _id          ObjectId [pk]
   pelicula_id  ObjectId [ref: > peliculas._id, note: "FK → peliculas"]
   sala_id      ObjectId [ref: > salas._id,     note: "FK → salas"]
@@ -88,7 +88,7 @@ Table funciones [note: "ENTREGA FINAL — Funciones programadas por semana"] {
   estado       String   [note: "Activa / Cancelada / Finalizada"]
 }
 
-Table horarios [note: "ENTREGA FINAL — Horarios recurrentes de funciones"] {
+Table horarios [note: "ENTREGA FINAL — Horarios recurrentes de funciones", headercolor: #34C759] {
   _id         ObjectId [pk]
   funcion_id  ObjectId [ref: > funciones._id, note: "FK → funciones"]
   dias_semana Array    [note: "Lunes, Martes, etc."]
@@ -98,7 +98,7 @@ Table horarios [note: "ENTREGA FINAL — Horarios recurrentes de funciones"] {
   activo      Boolean
 }
 
-Table tarifas [note: "ENTREGA FINAL — Precios por tipo de sala y día"] {
+Table tarifas [note: "ENTREGA FINAL — Precios por tipo de sala y día", headercolor: #34C759] {
   _id            ObjectId [pk]
   cadena_id      ObjectId [ref: > cadenas._id, note: "FK → cadenas"]
   tipo_sala      String
@@ -109,7 +109,7 @@ Table tarifas [note: "ENTREGA FINAL — Precios por tipo de sala y día"] {
   descuentos     Array    [note: "Objeto: tipo_descuento, porcentaje"]
 }
 
-Table asientos [note: "ENTREGA FINAL — Estado de asientos por función"] {
+Table asientos [note: "ENTREGA FINAL — Estado de asientos por función", headercolor: #FF9500] {
   _id        ObjectId [pk]
   sala_id    ObjectId [ref: > salas._id,     note: "FK → salas"]
   funcion_id ObjectId [ref: > funciones._id, note: "FK → funciones"]
@@ -120,7 +120,7 @@ Table asientos [note: "ENTREGA FINAL — Estado de asientos por función"] {
   es_discapacidad Boolean
 }
 
-Table clientes [note: "ENTREGA FINAL — Datos de usuarios del sistema"] {
+Table clientes [note: "ENTREGA FINAL — Datos de usuarios del sistema", headercolor: #FF9500] {
   _id               ObjectId [pk]
   nombre            String   [not null]
   apellidos         String   [not null]
@@ -130,7 +130,7 @@ Table clientes [note: "ENTREGA FINAL — Datos de usuarios del sistema"] {
   historial_reservas Array   [note: "Array de ObjectId → reservas"]
 }
 
-Table reservas [note: "ENTREGA FINAL — Reservas realizadas por clientes"] {
+Table reservas [note: "ENTREGA FINAL — Reservas realizadas por clientes", headercolor: #FF9500] {
   _id              ObjectId [pk]
   cliente_id       ObjectId [ref: > clientes._id,   note: "FK → clientes"]
   funcion_id       ObjectId [ref: > funciones._id,  note: "FK → funciones"]
@@ -141,7 +141,7 @@ Table reservas [note: "ENTREGA FINAL — Reservas realizadas por clientes"] {
   metodo_pago      String
 }
 
-Table boletos [note: "ENTREGA FINAL — Boletos emitidos por reserva"] {
+Table boletos [note: "ENTREGA FINAL — Boletos emitidos por reserva", headercolor: #FF9500] {
   _id           ObjectId [pk]
   reserva_id    ObjectId [ref: > reservas._id,   note: "FK → reservas"]
   asiento_id    ObjectId [ref: > asientos._id,   note: "FK → asientos"]

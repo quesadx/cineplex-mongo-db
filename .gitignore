@@ -7,3 +7,4 @@ flake.lock
 *.md
 docs/
 .DS_Store
+cineplex-dbdiagram.dbml.layout.json
